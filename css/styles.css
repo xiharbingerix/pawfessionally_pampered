@@ -1,0 +1,98 @@
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+h2 {font-family: Arial, Helvetica, sans-serif;
+text-align: center;}
+.newspaper {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: start;
+}
+
+.keep-together {/* Modern, standardized property */
+break-inside: avoid;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+  
+  .step {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .typeahead-container {
+    position: relative;
+    width: 300px;
+    margin: 0 auto; /* This centers the container and hence the input */
+    text-align: center; /* Centers the placeholder text inside the input if needed */
+}
+  
+  #breed-input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .typeahead-results {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    z-index: 999;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .typeahead-results li {
+    list-style: none;
+    padding: 8px;
+    cursor: pointer;
+    width: 300px;
+  }
+  
+  .typeahead-results li:hover {
+    background: #eee;
+  }
+  
+  select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  button {
+    display: block; 
+    margin: 10px auto;
+    padding: 8px 12px;
+    background: #0077cc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+  
+  button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  #result {
+    margin: 20px auto;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 300px;
+    text-align: center; /* centers any inline content inside #result */
+}
